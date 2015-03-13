@@ -1,0 +1,13 @@
+v0.0.1
+1、加载10x10固定大小拼接的图片墙资源文件
+2、根据鼠标位置及换算时间，单行显示对应的图片墙
+3、图片墙左右平滑滑动显示效果
+4、鼠标所指位置在图片正中并高亮显示
+
+v0.0.2
+1、增加非等宽bar类ShortProgressBar，修改继承关系
+
+v0.0.3
+1、修改ShortProgressBar类，之前计算OffsetIndex时除以（cardWidth/2）后+1，
+现在计算OffsetIndex时除cardWidth后+2，相应高亮块改为offsetIndex而不用offsetIndex/2+1
+固定右侧边框改为parentWidth - offsetIndex * cardWidth + PG_R;
